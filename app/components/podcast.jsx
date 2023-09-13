@@ -1,4 +1,4 @@
-import { Dialog, Button, Input, Label } from "@radix-ui/themes";
+import { Dialog, Button, } from "@radix-ui/themes";
 
 
 export function PodcastEmptyPlaceholder() {
@@ -39,8 +39,8 @@ export function PodcastEmptyPlaceholder() {
             </Dialog.Header>
             <div className="grid gap-4 py-4">
               <div className="grid gap-2">
-                <Label htmlFor="url">Podcast URL</Label>
-                <Input id="url" placeholder="https://example.com/feed.xml" />
+                <label htmlFor="url">Podcast URL</label>
+                <input id="url" placeholder="https://example.com/feed.xml" />
               </div>
             </div>
             <Dialog.Footer>

@@ -5,12 +5,13 @@ import { Table, Tabs, Button, ScrollArea, Separator, } from "@radix-ui/themes"
 import { listenNowAlbums, madeForYouAlbums } from '../data/Albums'
 import { AlbumArtwork } from "@/app/components/AlbumArtwork"
 import { PodcastEmptyPlaceholder } from "@/app/components/podcast"
+import Menu from "@/app/components/menu"
 
 const MusicPage = () => {
   return (
     <div className=''>
       <div className=" md:block">
-        {/* <Menu /> */}
+        <Menu />
         <div className="border-t">
           <div className="bg-background">
             <div className="grid lg:grid-cols-5">
