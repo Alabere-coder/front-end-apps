@@ -7,7 +7,7 @@ const Navbar = () => {
 
 
   return (
-    <div className='bg-transparent sticky top-0 left-0 right-0 border-b-2 py-4 px-6 flex items-center justify-between mb-5'>
+    <div className='bg-transparent z-[100] sticky top-0 left-0 right-0 border-b-2 py-4 px-6 flex items-center justify-between mb-5'>
         <div className='ml-8'>
             <Link size="6" href='/' className='text-black'>
                 Ui-Design

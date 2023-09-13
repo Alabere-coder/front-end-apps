@@ -4,7 +4,7 @@ import { DropdownMenu, Flex, Button } from "@radix-ui/themes";
 
 const Menu = () => {
   return (
-    <Flex gap="2" mb="2" ml="2">
+    <Flex gap="4" mb="2" ml="7">
       <DropdownMenu.Root>
         <DropdownMenu.Trigger>
           <Button variant="soft" color="gray">Music</Button>

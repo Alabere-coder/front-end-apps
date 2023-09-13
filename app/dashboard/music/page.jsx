@@ -6,6 +6,7 @@ import { listenNowAlbums, madeForYouAlbums } from '../data/Albums'
 import { AlbumArtwork } from "@/app/components/AlbumArtwork"
 import { PodcastEmptyPlaceholder } from "@/app/components/podcast"
 import Menu from "@/app/components/menu"
+import { AiOutlinePlusCircle } from "react-icons/ai"
 
 const MusicPage = () => {
   return (
@@ -32,7 +33,7 @@ const MusicPage = () => {
                       </Tabs.List>
                       <div className="ml-auto mr-4">
                         <Button>
-                          {/* <PlusCircledIcon className="mr-2 h-4 w-4" /> */}
+                          <AiOutlinePlusCircle className="mr-2 h-4 w-4" />
                           Add music
                         </Button>
                       </div>
@@ -111,7 +112,7 @@ const MusicPage = () => {
                         </div>
                       </div>
                       <Separator className="my-4" />
-                      {/* <PodcastEmptyPlaceholder /> */}
+                      
                       <PodcastEmptyPlaceholder />
                     </Tabs.Content>
                   </Tabs.Root>
