@@ -112,7 +112,7 @@ const MusicPage = () => {
                         </div>
                       </div>
                       <Separator className="my-4" />
-                      
+            
                       <PodcastEmptyPlaceholder />
                     </Tabs.Content>
                   </Tabs.Root>

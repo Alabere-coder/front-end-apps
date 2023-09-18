@@ -1,6 +1,10 @@
 'use client'
 
 import { Heading, Table, Tabs, Text, Button, Card } from "@radix-ui/themes"
+import RecentSales from "../components/RecentSales"
+import { Overview } from "../components/Overview"
+import MainHeader from "../components/MainHeader"
+import { Input } from "../components/input/input"
 
 const Dashboard = () => {
   return (
@@ -9,10 +13,19 @@ const Dashboard = () => {
         <div className="border-b">
           <div className="flex h-16 items-center px-4">
             {/* <TeamSwitcher /> */}
-            {/* <MainNav className="mx-6" /> */}
+            
+            <MainHeader />
             <div className="ml-auto flex items-center space-x-4">
-              {/* <Search />
-              <UserNav /> */}
+              
+              
+              <div>
+                <Input
+                  type="search"
+                  placeholder="Search..."
+                  className="md:w-[100px] lg:w-[300px]"
+                />
+              </div>
+              {/* <UserNav /> */}
             </div>
           </div>
         </div>
@@ -147,7 +160,8 @@ const Dashboard = () => {
                     <Text>Overview</Text>
                   </Heading>
                   <div className="pl-2">
-                    {/* <Overview /> */}
+                    
+                    <Overview />
                   </div>
                 </Card>
                 <Card className="col-span-3">
@@ -158,7 +172,8 @@ const Dashboard = () => {
                     </Text>
                   </Heading>
                   <div>
-                    {/* <RecentSales /> */}
+                    
+                    <RecentSales />
                   </div>
                 </Card>
               </div>
