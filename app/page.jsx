@@ -1,6 +1,7 @@
 import { Button, Heading, Flex, Text, Container } from '@radix-ui/themes'
 import { auth } from '@clerk/nextjs'
 import ParticleBackground from './components/ParticleBackground'
+import Navbar from './components/Navbar'
 
 export default function Home() {
 
@@ -8,6 +9,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24 gap-4">
+      <Navbar />
       <Container>
         <ParticleBackground />
         <Heading size="9" weight="bold" align="center">All-in-one Solution to</Heading>

@@ -1,30 +1,55 @@
 'use client'
 
-import { Heading, Table, Tabs, Text, Button, Card } from "@radix-ui/themes"
+import { Heading, TextField, Tabs, Text, Button, Card, Select, Link, Flex, Separator } from "@radix-ui/themes"
 import RecentSales from "../components/RecentSales"
 import { Overview } from "../components/Overview"
 import MainHeader from "../components/MainHeader"
-import { Input } from "../components/input/input"
 
 const Dashboard = () => {
   return (
     <div>
+      <Flex gap="5" ml="8" my="4">
+        <Link href="/dashboard/dashboards" color="gray" weight="medium">
+          Dashboards
+        </Link>
+        <Link color="gray" weight="medium">
+          Music
+        </Link>
+        <Link color="gray" weight="medium">
+          Forms
+        </Link>
+      </Flex>
+      <Separator size="4"/>
       <div className="flex-col md:flex">
         <div className="border-b">
           <div className="flex h-16 items-center px-4">
-            {/* <TeamSwitcher /> */}
+            <div className="mx-8 border-2 rounded-md w-[6rem]">
+              <Select.Root defaultValue='user1' size="1" gap="4">
+                <Select.Trigger variant="soft" placeholder="Select a Team" color="gray" />
+                <Select.Content color="gray" position="popper">
+                    <Select.Group>
+                        <Select.Label>Personal Account</Select.Label>
+                        <Select.Item value="user1">Team Lead</Select.Item>
+                    </Select.Group>
+                    <Select.Separator />
+                    <Select.Group>
+                        <Select.Label>Teams</Select.Label>
+                        <Select.Item value="user2">Second Team</Select.Item>
+                        <Select.Item value="user3">Third Team</Select.Item>
+                    </Select.Group>
+                </Select.Content>
+              </Select.Root>
+            </div>
             
             <MainHeader />
             <div className="ml-auto flex items-center space-x-4">
               
-              
               <div>
-                <Input
-                  type="search"
-                  placeholder="Search..."
-                  className="md:w-[100px] lg:w-[300px]"
+                <TextField.Input placeholder="Search..."
+                  className="md:w-[100px] lg:w-[300px] rounded"
                 />
               </div>
+              
               {/* <UserNav /> */}
             </div>
           </div>
