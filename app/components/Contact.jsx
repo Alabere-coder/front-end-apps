@@ -13,9 +13,9 @@ const Contact = () => {
                 </Dialog.Trigger>
 
                 <Dialog.Content style={{ maxWidth: 450 }}>
-                    <Dialog.Title>Edit profile</Dialog.Title>
+                    <Dialog.Title>Contact Me</Dialog.Title>
                     <Dialog.Description size="2" mb="4">
-                    Make changes to your profile.
+                    Please do drop a messase.
                     </Dialog.Description>
 
                     <Flex direction="column" gap="3">

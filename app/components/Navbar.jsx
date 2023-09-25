@@ -16,19 +16,10 @@ const Navbar = () => {
             </Link>
         </div>
         <Flex className='flex gap-4 text-black font-bold'>
-            {/* <Link href='/' className='text-black'>Home</Link> */}
             <About />
             <Contact />
         </Flex>
-        <div>
-          {
-            userId && (
-              <Link href='/dashboard'>
-                Dashboard
-              </Link>
-            )
-          }
-        </div>
+        
         <Flex gap="4" mr="6">
           {
             !userId && (

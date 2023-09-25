@@ -32,7 +32,7 @@ const MusicPage = () => {
                         </Tabs.Trigger>
                       </Tabs.List>
                       <div className="ml-auto mr-4">
-                        <Button>
+                        <Button className="bg-black">
                           <AiOutlinePlusCircle className="mr-2 h-4 w-4" />
                           Add music
                         </Button>
