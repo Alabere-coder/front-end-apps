@@ -1,25 +1,17 @@
 'use client'
 
-import { Heading, TextField, Tabs, Text, Button, Card, Select, Link, Flex, Separator } from "@radix-ui/themes"
+import { Heading, TextField, Tabs, Text, Button, Card, Select, Link, Flex, Separator, IconButton } from "@radix-ui/themes"
 import RecentSales from "../components/RecentSales"
 import { Overview } from "../components/Overview"
 import MainHeader from "../components/MainHeader"
+import { DotsHorizontalIcon, MagnifyingGlassIcon } from "@radix-ui/react-icons"
 
 const Dashboard = () => {
   return (
     <div>
-      <Flex gap="5" ml="8" my="4">
-        <Link href="/dashboard/dashboards" color="gray" weight="medium">
-          Dashboards
-        </Link>
-        <Link color="gray" weight="medium">
-          Music
-        </Link>
-        <Link color="gray" weight="medium">
-          Forms
-        </Link>
-      </Flex>
+      
       <Separator size="4"/>
+      
       <div className="flex-col md:flex">
         <div className="border-b">
           <div className="flex h-16 items-center px-4">
@@ -45,9 +37,23 @@ const Dashboard = () => {
             <div className="ml-auto flex items-center space-x-4">
               
               <div>
-                <TextField.Input placeholder="Search..."
+                {/* <TextField.Input placeholder="Search..."
                   className="md:w-[100px] lg:w-[300px] rounded"
-                />
+                /> */}
+                <TextField.Root>
+                <TextField.Slot>
+                  <MagnifyingGlassIcon height="16" width="16" />
+                  
+                </TextField.Slot>
+                <TextField.Input placeholder="Search docs…" size="2" />
+                <TextField.Slot>
+                  
+                  <IconButton size="1" variant="ghost">
+                    <DotsHorizontalIcon height="14" width="14" />
+                    
+                  </IconButton>
+                </TextField.Slot>
+              </TextField.Root>
               </div>
               
               {/* <UserNav /> */}

@@ -11,7 +11,7 @@ export function Sidebar({  }) {
             Discover
           </h2>
           <div className="space-y-1">
-            <Button variant="secondary" color='gray' className="w-full justify-start">
+            <Button variant="ghost" color='gray' className="w-full justify-start">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

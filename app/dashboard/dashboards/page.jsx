@@ -1,12 +1,13 @@
+"use client"
 import React from 'react'
 import DatabaseDashboard from './dashboard-pages/Db-dashboard'
+import { Flex } from '@radix-ui/themes'
 
 const HomeDashboards = () => {
   return (
-    <div>
-        <h1>HomeDashboards</h1>
+    <Flex direction="column">
         <DatabaseDashboard />
-    </div>
+    </Flex>
   )
 }
 

@@ -8,7 +8,7 @@ import { PiArrowSquareOutBold } from "react-icons/pi"
 
 const DatabaseDashboard = () => {
     return (
-        <div>
+        <div className='mx-4'>
             <Tabs.Root defaultValue="storage">
                 <Tabs.List>
                     <Tabs.Trigger value="overview">Overview</Tabs.Trigger>

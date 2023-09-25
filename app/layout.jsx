@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { Theme } from '@radix-ui/themes'
 import { ClerkProvider } from '@clerk/nextjs';
 import { dark } from "@clerk/themes";
+import Navbar from './components/Navbar';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body className={inter.className}>
           <Theme>
+            <Navbar />
             {children}
           </Theme>
         </body>

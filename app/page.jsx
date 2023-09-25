@@ -1,7 +1,7 @@
 import { Button, Heading, Flex, Text, Container } from '@radix-ui/themes'
 import { auth } from '@clerk/nextjs'
 import ParticleBackground from './components/ParticleBackground'
-import Navbar from './components/Navbar'
+
 
 export default function Home() {
 
@@ -9,16 +9,15 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24 gap-4">
-      <Navbar />
       <Container>
         <ParticleBackground />
         <Heading size="9" weight="bold" align="center">All-in-one Solution to</Heading>
         <Heading size="9" weight="bold" align="center">Kickstart your UI in a Click</Heading>
-        <div className=' my-8'>
-          <Text size="5" weight="medium">
+        <Flex align="center" justify="center" className=' my-8'>
+          <Text size="5" weight="medium" mx="auto" className='text-center w-[60%]'>
             UI-Design is a comprehensive design kit made with Radix-ui Theme. For building and developing web applications.
           </Text>
-        </div>
+        </Flex>
         <Flex gap="4" mt="6" justify="center">
           <Button size="3" color='gray' className='bg-black'>Purchase</Button>
           <Button size="3" variant='outline'>View Demo</Button>
