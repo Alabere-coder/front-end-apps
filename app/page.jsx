@@ -29,7 +29,7 @@ export default function Home() {
             )
           }
         </Flex>
-        <ParticleBackground />
+        {/* <ParticleBackground /> */}
         <Heading size="9" weight="bold" align="center">All-in-one Solution to</Heading>
         <Heading size="9" weight="bold" align="center">Kickstart your UI in a Click</Heading>
         <Flex align="center" justify="center" className=' my-8'>

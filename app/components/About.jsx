@@ -7,7 +7,7 @@ const About = () => {
     <div>
       <Dialog.Root>
         <Dialog.Trigger>
-          <Button >About-Us</Button>
+          <Button type="button" variant="classic" color="gray">About-Us</Button>
         </Dialog.Trigger>
         <Dialog.Content>
           <Dialog.Title>UI-Design</Dialog.Title>

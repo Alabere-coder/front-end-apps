@@ -1,7 +1,7 @@
 import '@radix-ui/themes/styles.css';
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { Theme } from '@radix-ui/themes'
+import { Theme, ThemePanel } from '@radix-ui/themes'
 import { ClerkProvider } from '@clerk/nextjs';
 import { dark } from "@clerk/themes";
 import Navbar from './components/Navbar';
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     }}>
       <html lang="en">
         <body className={inter.className}>
-          <Theme>
+          <Theme appearance="light" panelBackground="solid" radius="large">
             <Navbar />
             {children}
           </Theme>

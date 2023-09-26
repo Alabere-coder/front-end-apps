@@ -9,7 +9,7 @@ const Contact = () => {
         <Flex>
             <Dialog.Root>
                 <Dialog.Trigger>
-                    <Button>Contact Us</Button>
+                    <Button variant='classic' color='gray'>Contact Us</Button>
                 </Dialog.Trigger>
 
                 <Dialog.Content style={{ maxWidth: 450 }}>
