@@ -29,12 +29,12 @@ export default function Home() {
             )
           }
         </Flex>
-        {/* <ParticleBackground /> */}
+        <ParticleBackground />
         <Heading size="9" weight="bold" align="center">All-in-one Solution to</Heading>
         <Heading size="9" weight="bold" align="center">Kickstart your UI in a Click</Heading>
         <Flex align="center" justify="center" className=' my-8'>
           <Text size="5" weight="medium" mx="auto" className='text-center w-[60%]'>
-            UI-Design is a comprehensive design kit made with Radix-ui Theme. For building and developing web applications.
+            UI-Design is a comprehensive design kit made with Radix-ui Theme. For Fast building and developing web applications.
           </Text>
         </Flex>
         <Flex gap="4" mt="6" justify="center">

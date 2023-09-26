@@ -24,8 +24,8 @@ const Navbar = () => {
           {
             !userId && (
               <Flex gap="2">
-                <Link href='/sign-in' className='w-24 bg-black hover:bg-white hover:text-gray-400 rounded-lg border-2 border-solid border-gray-700 text-center text-white'>Sign-in</Link>
-                <Link href='/sign-up' className='w-24 bg-white hover:bg-black hover:text-gray-400 text-black rounded-lg border-2 border-solid border-gray-400 text-center'>Register</Link>
+                <Link href='/sign-in' className='w-24 font-bold bg-zinc-400 hover:bg-white hover:text-gray-400 rounded-lg border-2 border-solid border-gray-400 text-center text-white'>Sign-in</Link>
+                <Link href='/sign-up' className='w-24 font-bold bg-white hover:bg-zinc-400 hover:text-white text-gray-400 rounded-lg border-2 border-solid border-gray-400 text-center'>Register</Link>
               </Flex>
             )
           }
